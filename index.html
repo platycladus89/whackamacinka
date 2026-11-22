@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WHACK A MACINKA!</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            WHACK A MACINKA!
+        </a>
+
+        <nav>
+            <a href="index.html" class="active">DEJ MU!</a>
+            <a href="skore.html">PERSONAL BEST</a>
+        </nav>
+
+    </header>
+
+    <main class="game-container">
+
+        <h1>WHACK A MACINKA!</h1>
+
+        <p class="description">
+            Proklikej cestu k záchraně republiky!
+        </p>
+
+        <button id="pravidla-button" aria-label="Zobrazit_pravidla">
+            ?
+        </button>
+
+        <div id="pravidla-window" class="pravidla-window hidden">
+
+            <h2>PRAVIDLA HRY</h2>
+
+            <p>Macinka: +100 bodů</p>
+            <p>Babiš: +400 bodů</p>
+            <p>Schillerová: -500 bodů</p>
+
+        </div>
+
+        <section class="game-info">
+
+            <div class="info-box">
+                <span>SKÓRE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="info-box">
+                <span>ČAS</span>
+                <strong id="time">30</strong>
+            </div>
+
+        </section>
+
+        <div class="difficulty">
+            <label for="difficulty">OBTÍŽNOST:</label>
+
+            <select id="difficulty">
+                <option value="easy">EASY</option>
+                <option value="normal" selected>NORMAL</option>
+                <option value="hard">HARD</option>
+            </select>
+        </div>
+
+        <button id="start">
+            <b>START</b>
+        </button>
+
+        <section class="game-board" id="game-board">
+
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
